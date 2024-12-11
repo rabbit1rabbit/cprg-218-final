@@ -1,11 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
 h1{
     text-align: center;
 }
 
-.navbar ul{
-    list-style-type: none;
+main{
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
+.navbar ul{
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: rgb(58, 58, 58);
+}
+
+.navbar li{
+    float: left;
+}
 /*Image Gallery Slider*/
 
 .slider{
