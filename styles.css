@@ -4,6 +4,10 @@
     margin: 0px;
 }
 
+body{
+    font-family: "Poppins";
+}
+
 h1{
     text-align: center;
 }
