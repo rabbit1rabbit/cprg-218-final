@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/svg" href="assets/Favicon.svg">
     <title>cprg 218 final</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -17,12 +18,23 @@
           <li><a href="album-reviews.html">Insert Game Name Here</a></li>
         </ul>
       </nav>
-      
+
       <main>
       <h2>About Rayjim's Reviews</h2>
 
+      <div class="slider">
+        <div class="slides">
+            <img class="slide" src="assets/home_selfie.jpg" alt="Selfie of Rayjim in front of a Christmas Tree.">
+            <img class="slide" src="assets/home-bagel.jpg" alt="Picture of Bagel the Beagle in a jacket.">
+
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+      </div>
+
       <p>Hello, I’m Rayjim and Welcome to my game review blog! I have recently developed a interest in the game development industry and would like to eventually develop my own video game.I decided to start this blog to discover what makes a game “fun” and engaging to me. The reviews will contain a brief summary of what the game is, what I like and dislike about the game, and whether or not I recommend playing the game. My goals with these game reviews is to be able to clearly articulate my likes and dislikes in gaming.
       </p>
+
       </main>
   </body>
   <script src="scripts.js"></script>
