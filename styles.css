@@ -1,6 +1,16 @@
+h1{
+    text-align: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+
+/*Image Gallery Slider*/
+
 .slider{
     position: relative;
-    width: 100%;
+    width: 70%;
     margin: auto;
     overflow: hidden;
 }
@@ -8,6 +18,7 @@
 .slider img{
     width: 100%;
     display: none;
+    max-width: 100%;
 }
 
 img.displaySlide{
@@ -18,10 +29,17 @@ img.displaySlide{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color:black;
+    background-color:gray;
     color: white;
     border: none;
     cursor: pointer;
+    z-index: 10;
+    padding: 10px 15px;
+    opacity: 0.8;
+}
+
+.slider button:hover {
+    opacity: 1;
 }
 
 .previous{
