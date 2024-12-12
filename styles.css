@@ -10,6 +10,8 @@ body{
 
 h1{
     text-align: center;
+    color: #EE3C7C;
+    background-color: rgb(28, 28, 28);
 }
 
 main{
@@ -17,9 +19,17 @@ main{
     margin-right: 15px;
 }
 
+p{
+    background-color: #EE3C7C;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
 .navbar ul{
     list-style-type: none;
-    background-color: black;
+    background-color: rgb(28, 28, 28);
     padding: 0px;
     margin: 0px;
     overflow: hidden;
