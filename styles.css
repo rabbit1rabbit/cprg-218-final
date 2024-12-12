@@ -16,14 +16,24 @@ h1{
 }
 
 main{
-    margin-left: 15px;
-    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
+    gap: 15px;
 }
 
-p{
+.text-container{
+    flex: 1;
+    max-width: 60%;
+}
+
+.text-container p {
     background-color: #EE3C7C;
     padding: 10px;
-    margin: 10px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    border-radius: 10px;
 }
 
 /* navbar */
@@ -64,17 +74,21 @@ p{
 /*Image Gallery Slider*/
 
 .slider{
-    position: relative;
-    width: 100%;
-    margin: auto;
+    flex: 0 0 33%;
+    max-width: 33%;
+    max-height: 700px;
     overflow: hidden;
-    max-width: 700px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    position: relative;
 }
 
 .slider img{
     width: 100%;
+    max-height: 700px;
     display: none;
-    max-width: 100%;
+    object-fit: contain;
 }
 
 img.displaySlide{
@@ -83,14 +97,14 @@ img.displaySlide{
 
 .slider button{
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 50%;
+    bottom: translateY(-50%);
     background-color:gray;
     color: white;
     border: none;
     cursor: pointer;
     z-index: 10;
-    padding: 10px 8px;
+    padding: 14px 8px;
     opacity: 0.4;
 }
 
@@ -104,4 +118,38 @@ img.displaySlide{
 
 .next{
     right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container{
+        max-width: 100%;
+    }
+    
+
+    .slider{
+        width: 100%;
+        max-height: 500px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container{
+        max-width: 100%;
+    }
+    
+
+    .slider{
+        width: 100%;
+        max-height: 500px;
+    }
 }
